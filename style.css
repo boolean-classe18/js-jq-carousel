@@ -19,6 +19,7 @@
 
 .prev i, .next i {
     margin: auto;
+    cursor: pointer;
 }
 
 .slides {
@@ -46,18 +47,20 @@
     transform: translateX(-50%);
 }
 
-/* .bullets i {
+.bullets i {
     color: #f5f5f5;
-} */
-
+}
+/*
 .bullets span {
     display: inline-block;
     width: 15px;
     height: 15px;
     border: 2px solid #f5f5f5;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .bullets span.active {
     background-color: #f5f5f5;
 }
+*/

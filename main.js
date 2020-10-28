@@ -57,4 +57,63 @@ $(document).ready(function() {
         }
     });
 
+/*
+    // intercetto il click su un pallino
+    $('.bullets span').click(function() {
+
+        // recupero il pallino corrente
+        var pallino_corrente = $('span.active');
+        // tolgo la classe active al pallino corrente
+        pallino_corrente.removeClass('active');
+
+        // aggiungo la classe active al pallino su cui l'utente ha cliccato
+        $(this).addClass('active');
+
+        // recupero l'immagine corrente
+        var img_corrente = $('img.active');
+        // tolgo la classe active all'immagine corrente
+        img_corrente.removeClass('active');
+
+        // recupero il numero del pallino su cui l'utente ha cliccato
+        var indice_pallino = $(this).index();
+        // recupero l'immagine corrispondente allo stesso numero
+        var nuova_img = $('.slides img').eq(indice_pallino);
+        // assegno la classe active alla nuova immagine
+        nuova_img.addClass('active');
+
+        // var indice_img = indice_pallino + 1;
+        // var selettore = '.slides img:nth-child(' + indice_img + ')';
+        // $(selettore).addClass('active');
+    });
+*/
+
+    // intercetto il click su un pallino
+    $('.bullets i').click(function() {
+
+        // recupero il pallino corrente
+        var pallino_corrente = $('.bullets i.fas');
+        // tolgo la classe fas al pallino corrente e aggiungo far
+        // pallino_corrente.removeClass('fas').addClass('far');
+        pallino_corrente.toggleClass('fas far');
+
+        // aggiungo la classe fas e tolgo la classe far al pallino su cui l'utente ha cliccato
+        $(this).toggleClass('fas far');
+
+        // recupero l'immagine corrente
+        var img_corrente = $('img.active');
+        // tolgo la classe active all'immagine corrente
+        img_corrente.removeClass('active');
+
+        // recupero il numero del pallino su cui l'utente ha cliccato
+        var indice_pallino = $(this).index();
+        // recupero l'immagine corrispondente allo stesso numero
+        var nuova_img = $('.slides img').eq(indice_pallino);
+        // assegno la classe active alla nuova immagine
+        nuova_img.addClass('active');
+
+        // var indice_img = indice_pallino + 1;
+        // var selettore = '.slides img:nth-child(' + indice_img + ')';
+        // $(selettore).addClass('active');
+    });
+
 });
