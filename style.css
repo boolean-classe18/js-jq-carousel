@@ -47,10 +47,12 @@
     transform: translateX(-50%);
 }
 
+/*
 .bullets i {
     color: #f5f5f5;
 }
-/*
+*/
+
 .bullets span {
     display: inline-block;
     width: 15px;
@@ -63,4 +65,3 @@
 .bullets span.active {
     background-color: #f5f5f5;
 }
-*/
